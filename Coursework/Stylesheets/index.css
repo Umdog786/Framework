@@ -16,12 +16,8 @@ header h1 {
     font-family: 'MonteCarlo', cursive;
     font-weight: 500;
     font-size: 90px;
-    height: 120px;
     width: auto;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    padding-left: 5.5%;
-    padding-right: 5.5%;
+    margin: 0 6% 5px;
 }
 
 header h2 {
@@ -35,13 +31,13 @@ header h2 {
 
 header .HorizontalLine1 {
     display: inline-block;
-    width: 34.75vw;
+    width: 35%;
     border-color: #ab9353;
 }
 
 header .HorizontalLine2 {
     display: inline-block;
-    width: 34.75vw;
+    width: 35%;
     border-color: #ab9353;
 }
 
@@ -56,10 +52,20 @@ header .MainNav li {
     list-style-type: none;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 21px;
-    background-color: #d7cec7;
+    background-color: #f4e4d4;
     padding: 0.5% 0.5% 0.5% 0.5%;
     border: 2px black solid;
+}
 
+/* mouse over link */
+.MainNav a:hover {
+    color: #ab9353;
+}
+
+
+h1 a, a:hover, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 header .NavBar1 , .NavBar2{
@@ -125,34 +131,39 @@ aside {
     /*
     border: 2px red solid;
     */
-    margin-right: 3%;
-    margin-top: 5%;
+    margin-right: 2%;
+    margin-top: 1%;
 }
 
 aside img {
     border-radius: 2px;
 }
 
-aside #WT_IMAGE_1 {
+.AsideImages:hover {
+    cursor: pointer;
+}
+
+
+#WT_IMAGE_1 {
     width: 457px;
     height: 276px;
     margin-left: 200px;
     margin-bottom: 10px;
 }
 
-aside #WT_IMAGE_2 {
+#WT_IMAGE_2 {
     width: 409px;
     height: 294px;
     margin-right: 10px;
 }
 
-aside #WT_IMAGE_3 {
+#WT_IMAGE_3 {
     width: 392px;
     height: 293px;
 }
 
 /* The Modal (background) */
-aside .AsideModal {
+.AsideModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -167,7 +178,7 @@ aside .AsideModal {
 }
 
 /* Modal Content (Image) */
-aside .ModalImage {
+.ModalImage {
     margin: auto;
     display: block;
     width: 80%;
@@ -175,7 +186,7 @@ aside .ModalImage {
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-aside #ModalCaption {
+#ModalCaption {
     font-family: 'Libre Franklin', sans-serif;
     margin: auto;
     display: block;
@@ -188,7 +199,7 @@ aside #ModalCaption {
 }
 
 /* Add Animation - Zoom in the Modal */
-aside .ModalImage, #ModalCaption {
+.ModalImage, #ModalCaption {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
@@ -199,7 +210,7 @@ aside .ModalImage, #ModalCaption {
 }
 
 /* The Close Button */
-aside .ModalClose {
+.ModalClose {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -215,5 +226,88 @@ aside .ModalClose {
     text-decoration: none;
     cursor: pointer;
 }
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-around;
+    justify-content: space-between;
+    background: aqua;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+.FlexElements {
+    background-color: #f1f1f1;
+    margin: 20px;
+    padding: 70px;
+    font-size: 30px;
+/*    height: 250px;
+    width: 250px;*/
+}
+
+#FlexElementImg1 {
+    width: 270px;
+    height: 217px;
+}
+
+#FlexElementImg2 {
+    width: 313px;
+    height: 216px;
+}
+
+#FlexElementImg3 {
+    width: 176px;
+    height: 224px;
+}
+
+#FlexElementImg4 {
+    width: 298px;
+    height: 196px;
+}
+
+#FlexElementImg5 {
+    width: 299px;
+    height: 195px;
+}
+
+#FlexElementImg6 {
+    width: 291px;
+    height: 201px;
+}
+
+#FlexElementImg7 {
+    width: 295px;
+    height: 171px;
+}
+
+#FlexElementImg8 {
+    width: 260px;
+    height: 260px;
+}
+
+#FlexElementImg9 {
+    width: 260px;
+    height: 260px;
+}
+
+#FlexElementImg10 {
+    width: 260px;
+    height: 260px;
+}
+
+#FlexElementImg11 {
+    width: 299px;
+    height: 213px;
+}
+
+#FlexElementImg12 {
+    width: 295px;
+    height: 222px;
+}
+
+
 
 

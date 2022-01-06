@@ -11,7 +11,7 @@ let captionText = document.getElementById("ModalCaption");
 for (let i = 0; i < images.length; i++) {
     let img = images[i];
     // and attach our click listener for this image.
-    img.onclick = function(evt) {
+    img.onclick = function() {
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
