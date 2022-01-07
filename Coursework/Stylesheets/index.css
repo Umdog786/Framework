@@ -227,7 +227,7 @@ aside img {
     cursor: pointer;
 }
 
-.FlexContainer {
+.GalleryFlexContainer {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -237,72 +237,70 @@ aside img {
 
 }
 
-.FlexElements {
+.GalleryFlexElements {
     border: 1px solid #ab9353;
     display: block;
     height: 450px;
     margin: 10px;
     font-size: 30px;
-/*    height: 250px;
-    width: 250px;*/
 }
 
-#FlexElementImg1 {
+#GalleryFlexElementImg1 {
     width: 269px;
     height: 216px;
 }
 
-#FlexElementImg2 {
+#GalleryFlexElementImg2 {
     width: 313px;
     height: 216px;
 }
 
-#FlexElementImg3 {
+#GalleryFlexElementImg3 {
     width: 176px;
     height: 224px;
 }
 
-#FlexElementImg4 {
+#GalleryFlexElementImg4 {
     width: 298px;
     height: 196px;
 }
 
-#FlexElementImg5 {
+#GalleryFlexElementImg5 {
     width: 299px;
     height: 195px;
 }
 
-#FlexElementImg6 {
+#GalleryFlexElementImg6 {
     width: 291px;
     height: 201px;
 }
 
-#FlexElementImg7 {
+#GalleryFlexElementImg7 {
     width: 295px;
     height: 171px;
 }
 
-#FlexElementImg8 {
+#GalleryFlexElementImg8 {
     width: 212px;
     height: 259px;
 }
 
-#FlexElementImg9 {
+#GalleryFlexElementImg9 {
     width: 260px;
     height: 260px;
 }
 
-#FlexElementImg10 {
+#GalleryFlexElementImg10 {
     width: 260px;
     height: 260px;
 }
 
-#FlexElementImg11 {
+#GalleryFlexElementImg11 {
     width: 299px;
     height: 213px;
 }
 
-#FlexElementImg12 {
+#GalleryFlexElementImg12 {
     width: 295px;
     height: 222px;
 }
@@ -315,7 +313,7 @@ figcaption {
     color: #f4e4d4;
 }
 
-.AddToCartButton, .AddToCartButtonVisited {
+.AddToCartButton, .AddToCartButtonVisited, .BeforeAfterButtons {
     display: block;
     margin-top: 10px;
     margin-left: auto;
@@ -329,7 +327,7 @@ figcaption {
     border: 1px solid black;
 }
 
-.AddToCartButton:hover {
+.AddToCartButton:hover, .BeforeAfterButtons:hover {
     cursor:pointer;
     background-color: #f4e4d4;
     color: #ab9353;
@@ -338,5 +336,43 @@ figcaption {
 .AddToCartButtonVisited {
     cursor:pointer;
     background-color: #f4e4d4;
+    color: #ab9353;
+}
+
+.RestorationsFlexContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.RestorationFlexElements {
+    height: 500px;
+    display: block;
+    margin: 10px;
+    font-size: 30px;
+    border: 1px solid #ab9353;
+
+}
+
+#OilPainting {
+    width: 290px;
+    height: 197px;
+}
+
+#Reframing {
+    width: 256px;
+    height: 201px;
+}
+
+#FireDamage {
+    width: 270px;
+    height: 208px;
+}
+
+.RestorationsFlexContainer h3 {
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
     color: #ab9353;
 }

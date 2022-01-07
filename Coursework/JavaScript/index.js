@@ -6,6 +6,7 @@ let captionText = document.getElementById("ModalCaption");
 for (let i = 0; i < images.length; i++) {
     let img = images[i];
     img.onclick = function() {
+        console.log(3);
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
@@ -26,3 +27,38 @@ for (let j = 0; j < buttons.length; j++) {
     });
 }
 
+function OilPaintingButton() {
+    if (document.getElementById("OilPainting").alt === "Oil Painting Before") {
+        document.getElementById("OilPainting").alt = "Oil Painting After";
+        document.getElementById("OilPainting").src = "Images/Restorations/Oil-Painting-After.jpg";
+        document.getElementById("OilPaintingButton").innerHTML = "Before";
+    } else if (document.getElementById("OilPainting").alt === "Oil Painting After") {
+        document.getElementById("OilPainting").alt = "Oil Painting Before";
+        document.getElementById("OilPainting").src = "Images/Restorations/Oil-Painting-Before.jpg";
+        document.getElementById("OilPaintingButton").innerHTML = "After";
+    }
+}
+
+function ReframingButton() {
+    if (document.getElementById("Reframing").alt === "Reframing Before") {
+        document.getElementById("Reframing").alt = "Reframing After";
+        document.getElementById("Reframing").src = "Images/Restorations/Framed-After.jpg";
+        document.getElementById("ReframingButton").innerHTML = "Before";
+    } else if (document.getElementById("Reframing").alt === "Reframing After") {
+        document.getElementById("Reframing").alt = "Reframing Before";
+        document.getElementById("Reframing").src = "Images/Restorations/Framed-Before.jpg";
+        document.getElementById("ReframingButton").innerHTML = "After";
+    }
+}
+
+function FireDamageButton() {
+    if (document.getElementById("FireDamage").alt === "Fire Damage Before") {
+        document.getElementById("FireDamage").alt = "Fire Damage After";
+        document.getElementById("FireDamage").src = "Images/Restorations/Fire-Damage-After.jpg";
+        document.getElementById("FireDamageButton").innerHTML = "Before";
+    } else if (document.getElementById("FireDamage").alt === "Fire Damage After") {
+        document.getElementById("FireDamage").alt = "Fire Damage Before";
+        document.getElementById("FireDamage").src = "Images/Restorations/Fire-Damage-Before.jpg";
+        document.getElementById("FireDamageButton").innerHTML = "After";
+    }
+}
