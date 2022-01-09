@@ -376,3 +376,84 @@ figcaption {
     font-size: 20px;
     color: #ab9353;
 }
+
+#AccountCreationForm {
+    margin-top: 3%;
+    margin-left: 35%;
+}
+
+#AccountCreationForm label {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    color: #ab9353;
+}
+
+.FormElements, .Selection {
+    margin-top: 2%;
+    margin-right: 0.5%;
+    padding-right: 2%;
+    height: 20px;
+    background-color:#f4e4d4 ;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 17px;
+    color: black;
+
+}
+
+.Selection {
+    height: 26px;
+}
+
+#Prefix {
+    margin-left: 4.8%;
+    width: 7%;
+}
+
+#FirstName{
+    width: 10%;
+}
+
+#Surname{
+    width: 10%;
+}
+
+#EmailAddress {
+    margin-left: 1.7%;
+    width: 31.1%
+}
+
+#CountryCodes {
+    margin-left: 1%;
+    width: 8%;
+}
+
+#PhoneNumber {
+    width: 22.2%;
+}
+
+#Postcode {
+    margin-left: 5.1%;
+    width: 31.2%;
+}
+
+#Address {
+    margin-left: 6%;
+    width: 31.2%;
+}
+
+#SubmitButton {
+    background-color: #ab9353;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 17px;
+    color: black;
+    margin-top: 1.5%;
+    margin-left: 43.1%;
+    height: 50px;
+    width: 21.9%;
+}
+
+#SubmitButton:hover {
+    cursor:pointer;
+    background-color: #f4e4d4;
+    color: #ab9353;
+}

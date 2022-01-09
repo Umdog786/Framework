@@ -62,3 +62,23 @@ function FireDamageButton() {
         document.getElementById("FireDamageButton").innerHTML = "After";
     }
 }
+
+function FormSubmitButton() {
+    let prefix = document.getElementById("Prefix");
+    let firstName = document.getElementById("FirstName");
+    let surname = document.getElementById("Surname");
+    let emailAddress = document.getElementById("EmailAddress");
+    let countryCode = document.getElementById("CountryCodes");
+    let phoneNumber = document.getElementById("PhoneNumber");
+    let postcode = document.getElementById("Postcode");
+    let address = document.getElementById("Address");
+
+    localStorage.setItem("Prefix", prefix.value);
+    localStorage.setItem("FirstName", firstName.value);
+    localStorage.setItem("Surname", surname.value);
+    localStorage.setItem("EmailAddress", emailAddress.value);
+    localStorage.setItem("CountryCode", countryCode.value);
+    localStorage.setItem("PhoneNumber", phoneNumber.value);
+    localStorage.setItem("Postcode", postcode.value);
+    localStorage.setItem("Address", address.value);
+}
