@@ -3,30 +3,55 @@
 header {
     background-color: #344a69;
     margin: 0;
+    text-align: center;
 }
 
-header h1, h2 {
+#HeaderTitle, #HeaderSubTitle {
     margin: 0;
     color: #ab9353;
     text-align: center;
 }
 
-header h1 {
+#HeaderTitle {
+    text-align: center;
     display: inline-block;
     font-family: 'MonteCarlo', cursive;
     font-weight: 500;
     font-size: 90px;
-    width: auto;
-    margin: 0 6% 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:225px;
 }
 
-header h2 {
+#HeaderSubTitle {
     margin-left: auto;
     margin-right: auto;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
     'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 25px;
+}
+
+.StyleButtons {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+#ChangeBackground, #Reset, #FontSize {
+    display: inline-block;
+    float: right;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: #ab9353;
+    border: 1px solid black;
+}
+
+#ChangeBackground:hover, #Reset:hover, #FontSize:hover {
+    cursor: pointer;
+    background-color: #f4e4d4;
+    color: #ab9353;
 }
 
 header .HorizontalLine1 {
@@ -226,7 +251,7 @@ aside img {
     text-decoration: none;
     cursor: pointer;
 }
-
+/*------------------------Gallery------------------------*/
 .GalleryFlexContainer {
     display: flex;
     flex-wrap: wrap;
@@ -338,6 +363,7 @@ figcaption {
     background-color: #f4e4d4;
     color: #ab9353;
 }
+/*------------------------Restorations------------------------*/
 
 .RestorationsFlexContainer {
     display: flex;
@@ -376,6 +402,7 @@ figcaption {
     font-size: 20px;
     color: #ab9353;
 }
+/*------------------------Account------------------------*/
 
 #AccountCreationForm {
     margin-top: 3%;

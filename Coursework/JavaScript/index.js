@@ -72,7 +72,6 @@ function FormSubmitButton() {
     let phoneNumber = document.getElementById("PhoneNumber");
     let postcode = document.getElementById("Postcode");
     let address = document.getElementById("Address");
-
     localStorage.setItem("Prefix", prefix.value);
     localStorage.setItem("FirstName", firstName.value);
     localStorage.setItem("Surname", surname.value);
@@ -81,4 +80,19 @@ function FormSubmitButton() {
     localStorage.setItem("PhoneNumber", phoneNumber.value);
     localStorage.setItem("Postcode", postcode.value);
     localStorage.setItem("Address", address.value);
+}
+
+window.onload = function LoadStuff() {
+/*
+    document.getElementById("header").style.backgroundColor = 'red';
+*/
+}
+let backgroundColours = ['#181a1b', '#673ab7', '#9f241b','#344a69'];
+let picker = 0;
+function ChangeBackground() {
+    document.getElementById("header").style.backgroundColor = backgroundColours[picker];
+    picker += 1;
+    if (picker === backgroundColours.length) {
+        picker = 0;
+    }
 }
