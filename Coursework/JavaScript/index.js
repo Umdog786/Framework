@@ -2,6 +2,17 @@ let modal = document.getElementById('AsideModal');
 let images = document.getElementsByClassName('AsideImages');
 let modalImg = document.getElementById("ModalImage");
 let captionText = document.getElementById("ModalCaption");
+let backgroundColours = ['#000000', '#673ab7', '#9f241b','#344a69'];
+let fontSize = ["170%", "200%", "230%", "120%"];
+let fontPicker = 0;
+let colourPicker = 0;
+
+
+window.onload = function LoadStuff() {
+    document.getElementById("header").style.backgroundColor = localStorage.getItem('BGColour');
+    document.getElementById("body").style.backgroundColor = localStorage.getItem('BGColour');
+    document.getElementById("HeaderSubTitle").style.fontSize = localStorage.getItem('FontSize');
+}
 
 for (let i = 0; i < images.length; i++) {
     let img = images[i];
@@ -14,7 +25,7 @@ for (let i = 0; i < images.length; i++) {
 }
 
 let span = document.getElementsByClassName("ModalClose")[0];
-span.onclick = function() {
+span.onclick = function()  {
     modal.style.display = "none";
 }
 
@@ -82,17 +93,32 @@ function FormSubmitButton() {
     localStorage.setItem("Address", address.value);
 }
 
-window.onload = function LoadStuff() {
-/*
-    document.getElementById("header").style.backgroundColor = 'red';
-*/
-}
-let backgroundColours = ['#181a1b', '#673ab7', '#9f241b','#344a69'];
-let picker = 0;
+
 function ChangeBackground() {
-    document.getElementById("header").style.backgroundColor = backgroundColours[picker];
-    picker += 1;
-    if (picker === backgroundColours.length) {
-        picker = 0;
+    document.getElementById("header").style.backgroundColor = backgroundColours[colourPicker];
+    document.getElementById("body").style.backgroundColor = backgroundColours[colourPicker];
+    localStorage.setItem("BGColour",backgroundColours[colourPicker]);
+    colourPicker += 1;
+    if (colourPicker === backgroundColours.length) {
+        colourPicker = 0;
     }
+}
+
+function IncreaseSize() {
+    document.getElementById("HeaderSubTitle").style.fontSize = fontSize[fontPicker];
+    localStorage.setItem('FontSize', fontSize[fontPicker]);
+    fontPicker += 1;
+    if (fontPicker === fontSize.length) {
+        fontPicker = 0;
+    }
+}
+
+function Reset() {
+    colourPicker = 0;
+    fontPicker = 0;
+    document.getElementById("header").style.backgroundColor = '#344a69';
+    document.getElementById("body").style.backgroundColor = '#344a69';
+    localStorage.setItem("BGColour", '#344a69');
+    document.getElementById("HeaderSubTitle").style.fontSize = "120%";
+    localStorage.setItem("FontSize", "120%");
 }
