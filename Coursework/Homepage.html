@@ -14,50 +14,40 @@
 </head>
 
 <header id="header">
-<!--
-    <hr class="HorizontalLine1">
--->
     <nav>
         <ul class="StyleButtons">
-            <li><button id="Reset" onclick="ChangeBackground()">Reset</button></li>
+            <li><button id="Reset" onclick="Reset()">Reset</button></li>
             <li><button id="ChangeBackground" onclick="ChangeBackground()">Background</button></li>
-            <li><button id="FontSize" onclick="ChangeBackground()">Font</button></li>
+            <li><button id="FontSize" onclick="IncreaseSize()">Font</button></li>
         </ul>
     </nav>
 
     <h1 id = "HeaderTitle"><a href="Homepage.html">Framework</a></h1>
-<!--
-    <button id="ChangeBackground1" onclick="ChangeBackground()">Background</button>
--->
+    <h2 id="HeaderSubTitle">NOTTINGHAM</h2>
 
-
-        <!--
-    <hr class="HorizontalLine2">
--->
-
-        <h2 id="HeaderSubTitle">NOTTINGHAM</h2>
-
-        <nav>
-            <ul class="MainNav">
-                <li class="NavBar1"><a href="Gallery.html">Gallery</a></li>
-                <li class="NavBar2"><a href="Restorations.html">Restorations</a></li>
-                <li class="NavBar3Push"><a href="Artists.html">Artists</a></li>
-                <li class="NavBar4"><a href="Account.html">Account</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="MainNav">
+            <li id="NavBar1"><a href="Gallery.html">Gallery</a></li>
+            <li id="NavBar2"><a href="Restorations.html">Restorations</a></li>
+            <li id="NavBar3Push"><a href="Artists.html">Artists</a></li>
+            <li id="NavBar4"><a href="Account.html">Account</a></li>
+        </ul>
+    </nav>
 </header>
 
-<body>
-    <hr class="HorizontalLine3">
-    <hr class="HorizontalLine4">
+<body id="body">
+    <hr id="HorizontalLine3">
+    <hr id="HorizontalLine4">
     <br>
 
-    <main class="CollageDescription">
-        <h1>Art Movement</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed risus vel nisi dignissim porttitor.
-            Quisque non leo efficitur velit luctus auctor. Suspendisse non augue quis eros aliquet convallis. In hac
-            habitasse platea dictumst. Quisque dictum ultrices placerat. Integer vitae turpis sit amet orci laoreet
-            molestie. Integer posuere lacinia elementum.</p>
+    <main>
+        <h1 id="MainTitle">Our Story</h1>
+        <p id="MainText">Framework has been specialising in landscape and old master's paintings for over
+            10 years. Our collection is one of the largest in the country and showcases 500 years of
+            British & European art from the 1600s through to the late 20th century. We focus our current collection on
+            the renaissance and romanticism art movements, ranging from striking seascapes to bustling Venetian
+            landscapes. Throughout this website showcase you can <i>click to enlarge</i> any of the images for a more
+            high definition viewing.</p>
     </main>
 
     <aside class="AsideCollage">
@@ -85,14 +75,13 @@
             <span class="ModalClose">&times;</span>
 
             <!-- Modal Content (The Image) -->
-            <img class="ModalImage" id="ModalImage">
+            <img alt = "" class="ModalImage" id="ModalImage">
 
             <!-- Modal Caption (Image Text) -->
             <section id="ModalCaption"></section>
         </section>
 
     </aside>
-
 
 </body>
 

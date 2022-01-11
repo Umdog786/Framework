@@ -13,26 +13,31 @@
     <title>Account</title>
 </head>
 
-<header>
-    <hr class="HorizontalLine1">
-    <h1 id = "HeaderTitle"><a href="Homepage.html">Framework</a></h1>
-    <hr class="HorizontalLine2">
+<header id="header">
+    <nav>
+        <ul class="StyleButtons">
+            <li><button id="Reset" onclick="Reset()">Reset</button></li>
+            <li><button id="ChangeBackground" onclick="ChangeBackground()">Background</button></li>
+            <li><button id="FontSize" onclick="IncreaseSize()">Font</button></li>
+        </ul>
+    </nav>
 
-    <h2 id = "HeaderSubTitle">NOTTINGHAM</h2>
+    <h1 id = "HeaderTitle"><a href="Homepage.html">Framework</a></h1>
+    <h2 id="HeaderSubTitle">NOTTINGHAM</h2>
 
     <nav>
-        <ul class = "MainNav">
-            <li class="NavBar1"><a href="Gallery.html">Gallery</a></li>
-            <li class="NavBar2"><a href="Restorations.html">Restorations</a></li>
-            <li class="NavBar3Push"><a href="Artists.html">Artists</a></li>
-            <li class="NavBar4"><a href="Account.html">Account</a></li>
+        <ul class="MainNav">
+            <li id="NavBar1"><a href="Gallery.html">Gallery</a></li>
+            <li id="NavBar2"><a href="Restorations.html">Restorations</a></li>
+            <li id="NavBar3Push"><a href="Artists.html">Artists</a></li>
+            <li id="NavBar4"><a href="Account.html">Account</a></li>
         </ul>
     </nav>
 </header>
 
-<body>
-<hr class="HorizontalLine3">
-<hr class="HorizontalLine4">
+<body id="body">
+<hr id="HorizontalLine3">
+<hr id="HorizontalLine4">
 <br>
 
 <form id="AccountCreationForm">
