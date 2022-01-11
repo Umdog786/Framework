@@ -156,23 +156,22 @@ aside img {
 #WT_IMAGE_1 {
     width: 355px;
     height: 214px;
-    margin-left: 200px;
-    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #WT_IMAGE_2 {
-    display: inline-block;
-    float: left;
     width: 343px;
     height: 247px;
-    margin-right: 10px;
+    margin-left: 15%;
+    margin-top: 2%;
 }
 
 #WT_IMAGE_3 {
-    display: inline-block;
-    float: right;
     width: 333px;
     height: 249px;
+    margin-left: 2%;
 }
 
 .AsideImages:hover {
