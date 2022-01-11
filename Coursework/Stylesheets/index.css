@@ -430,7 +430,7 @@ figcaption {
     color: #ab9353;
 }
 
-.FormElements, .Selection {
+.FormElementsValid, .Selection {
     margin-top: 2%;
     margin-right: 0.5%;
     padding-right: 2%;
