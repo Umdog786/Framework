@@ -58,14 +58,16 @@
            name="FirstName"
            class="FormElements"
            placeholder="First Name"
-           required>
+           required
+           pattern="^[a-zA-Z]+$">
     <label for="Surname"></label>
     <input type="text"
            id="Surname"
            name="Surname"
            class="FormElements"
            placeholder="Surname"
-           required>
+           required
+           pattern="^[a-zA-Z]+$">
     <br>
     <label for="EmailAddress">Email Address</label>
     <input type="email"
@@ -73,7 +75,7 @@
            name="EmailAddress"
            class="FormElements"
            placeholder="Email Address"
-           pattern="\w+@[0-9a-zA-Z]+?.[a-zA-Z]{1,6}[.a-zA-Z]{1,6})"
+           pattern="\w+@[0-9a-zA-Z]+?.[a-zA-Z]{1,6}[.a-zA-Z]{1,6}"
            title="Email Address"
            required>
     <br>
@@ -103,8 +105,10 @@
            id="PhoneNumber"
            name="PhoneNumber"
            class="FormElements"
-           placeholder="Phone Number"
-           required>
+           placeholder="Phone Number" required
+           minlength="9"
+           maxlength="11"
+           pattern="^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$">
     <br>
     <label for="Postcode">
         Postcode
@@ -114,7 +118,8 @@
            name="Postcode"
            class="FormElements"
            placeholder="Postcode"
-           required>
+           required
+           pattern="/^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i">
     <br>
     <label for="Address">
         Address

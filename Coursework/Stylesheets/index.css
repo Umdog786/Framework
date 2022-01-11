@@ -416,8 +416,12 @@ figcaption {
 
 #AccountCreationForm {
     margin-top: 3%;
-    margin-left: 35%;
+    margin-right: auto;
+    margin-left: auto;
     width: 700px;
+    height: 500px;
+    border: 1px solid #ab9353;
+    text-align: center;
 }
 
 #AccountCreationForm label {
@@ -434,11 +438,11 @@ figcaption {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 17px;
     color: black;
-
+    height: 5%;
 }
 
 .Selection {
-    height: 26px;
+    height: 30px;
 }
 
 #Prefix {

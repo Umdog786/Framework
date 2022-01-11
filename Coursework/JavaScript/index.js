@@ -75,6 +75,11 @@ function FireDamageButton() {
 }
 
 function FormSubmitButton() {
+    if (document.getElementById("FirstName").validity.patternMismatch) {
+        document.getElementById("header").style.backgroundColor="red";
+    }
+
+
     let prefix = document.getElementById("Prefix");
     let firstName = document.getElementById("FirstName");
     let surname = document.getElementById("Surname");
