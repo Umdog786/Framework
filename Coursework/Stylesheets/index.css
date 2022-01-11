@@ -145,7 +145,7 @@ aside {
     border: 2px red solid;
     */
     margin-right: 2%;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 1%;
 }
 
@@ -248,10 +248,9 @@ aside img {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    align-content: space-around;
-    justify-content: space-around;
-    gap: 20px 20px;
-
+    align-content: center;
+    justify-content: center;
+    gap: 4%;
 }
 
 .GalleryFlexElements {
@@ -259,8 +258,9 @@ aside img {
     background-color: #616161;
     display: block;
     height: 450px;
-    margin: 10px;
     font-size: 30px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 #GalleryFlexElementImg1 {
@@ -417,6 +417,7 @@ figcaption {
 #AccountCreationForm {
     margin-top: 3%;
     margin-left: 35%;
+    width: 700px;
 }
 
 #AccountCreationForm label {
@@ -429,7 +430,6 @@ figcaption {
     margin-top: 2%;
     margin-right: 0.5%;
     padding-right: 2%;
-    height: 20px;
     background-color:#f4e4d4 ;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 17px;
@@ -442,40 +442,40 @@ figcaption {
 }
 
 #Prefix {
-    margin-left: 4.8%;
-    width: 7%;
+    margin-left: 8.4%;
+    width: 12%;
 }
 
 #FirstName{
-    width: 10%;
+    width: 23.7%;
 }
 
 #Surname{
-    width: 10%;
+    width: 16%;
 }
 
 #EmailAddress {
-    margin-left: 1.7%;
-    width: 31.1%
+    margin-left: 2.8%;
+    width: 57%
 }
 
 #CountryCodes {
-    margin-left: 1%;
-    width: 8%;
+    margin-left: 1.6%;
+    width: 12%;
 }
 
 #PhoneNumber {
-    width: 22.2%;
+    width: 43.8%;
 }
 
 #Postcode {
-    margin-left: 5.1%;
-    width: 31.2%;
+    margin-left: 8.9%;
+    width: 57.2%;
 }
 
 #Address {
-    margin-left: 6%;
-    width: 31.2%;
+    margin-left: 10.5%;
+    width: 57.2%;
 }
 
 #SubmitButton {
@@ -484,9 +484,9 @@ figcaption {
     font-size: 17px;
     color: black;
     margin-top: 1.5%;
-    margin-left: 43.1%;
+    margin-left: 22%;
     height: 50px;
-    width: 21.9%;
+    width: 60%;
 }
 
 #SubmitButton:hover {
