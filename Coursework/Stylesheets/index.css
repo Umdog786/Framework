@@ -154,23 +154,29 @@ aside img {
 }
 
 #WT_IMAGE_1 {
-    width: 355px;
-    height: 214px;
+/*    width: 355px;
+    height: 214px;*/
+    width: 35%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 #WT_IMAGE_2 {
-    width: 343px;
-    height: 247px;
-    margin-left: 15%;
+/*    width: 343px;
+    height: 247px;*/
+    width: 37%;
+    height: auto;
+    margin-left: 18%;
     margin-top: 2%;
 }
 
 #WT_IMAGE_3 {
-    width: 333px;
-    height: 249px;
+/*    width: 333px;
+    height: 249px;*/
+    width: 35.5%;
+    height: auto;
     margin-left: 2%;
 }
 
