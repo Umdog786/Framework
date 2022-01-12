@@ -6,6 +6,8 @@ let backgroundColours = ['#000000', '#673ab7', '#9f241b','#344a69'];
 let fontSize = ["170%", "200%", "230%", "120%"];
 let fontPicker = 0;
 let colourPicker = 0;
+let formElements = document.getElementsByClassName("FormElementsValid");
+let validFlag = true;
 
 
 window.onload = function LoadStuff() {
@@ -75,29 +77,55 @@ function FireDamageButton() {
 }
 
 function FormSubmitButton() {
-    if (document.getElementById("FirstName").validity.patternMismatch) {
-        document.getElementById("header").style.backgroundColor="red";
+    for (let a = 0; a < formElements.length; a++) {
+        if (!formElements[a].validity.valid) {
+/*
+            generateErrors(formElements[a].id);
+*/
+            validFlag = false;
+        }
+    }
+    if (validFlag === true) {
+        let prefix = document.getElementById("Prefix");
+        let firstName = document.getElementById("FirstName");
+        let surname = document.getElementById("Surname");
+        let emailAddress = document.getElementById("EmailAddress");
+        let countryCode = document.getElementById("CountryCodes");
+        let phoneNumber = document.getElementById("PhoneNumber");
+        let postcode = document.getElementById("Postcode");
+        let address = document.getElementById("Address");
+        localStorage.setItem("Prefix", prefix.value);
+        localStorage.setItem("FirstName", firstName.value);
+        localStorage.setItem("Surname", surname.value);
+        localStorage.setItem("EmailAddress", emailAddress.value);
+        localStorage.setItem("CountryCode", countryCode.value);
+        localStorage.setItem("PhoneNumber", phoneNumber.value);
+        localStorage.setItem("Postcode", postcode.value);
+        localStorage.setItem("Address", address.value);
+        document.getElementById("ErrorMessage").innerHTML = "Account Created Successfully";
+    } else {
+        document.getElementById("ErrorMessage").innerHTML = "Error Creating Account - Retry";
+
     }
 
 
-    let prefix = document.getElementById("Prefix");
-    let firstName = document.getElementById("FirstName");
-    let surname = document.getElementById("Surname");
-    let emailAddress = document.getElementById("EmailAddress");
-    let countryCode = document.getElementById("CountryCodes");
-    let phoneNumber = document.getElementById("PhoneNumber");
-    let postcode = document.getElementById("Postcode");
-    let address = document.getElementById("Address");
-    localStorage.setItem("Prefix", prefix.value);
-    localStorage.setItem("FirstName", firstName.value);
-    localStorage.setItem("Surname", surname.value);
-    localStorage.setItem("EmailAddress", emailAddress.value);
-    localStorage.setItem("CountryCode", countryCode.value);
-    localStorage.setItem("PhoneNumber", phoneNumber.value);
-    localStorage.setItem("Postcode", postcode.value);
-    localStorage.setItem("Address", address.value);
 }
 
+/*
+function generateErrors(ErrorElementId) {
+    let currentError = document.getElementById(ErrorElementId);
+    let errorMessage = document.getElementById("ErrorMessage");
+    if (currentError.validity.valueMissing) {
+        let error = document.createTextNode(
+            `${currentError.id} is empty
+            `);
+
+        errorMessage.appendChild(error);
+    }
+
+}
+
+*/
 
 function ChangeBackground() {
     document.getElementById("header").style.backgroundColor = backgroundColours[colourPicker];

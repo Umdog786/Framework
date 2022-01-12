@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name = "description" content="Internet Applications Coursework - Account">
     <meta name= "author" content="Umar Ali">
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Stylesheets/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@
     <input type="text"
            id="FirstName"
            name="FirstName"
-           class="FormElements"
+           class="FormElementsValid"
            placeholder="First Name"
            required
            pattern="^[a-zA-Z]+$">
@@ -119,7 +119,7 @@
            class="FormElementsValid"
            placeholder="Postcode"
            required
-           pattern="/^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i">
+           >
     <br>
     <label for="Address">
         Address
@@ -130,9 +130,12 @@
            class="FormElementsValid"
            placeholder="Address"
            required>
-    <button id="SubmitButton" type="submit" onclick="FormSubmitButton()">
+    <button id="SubmitButton" type="button" onclick="FormSubmitButton()">
         Create Account
     </button>
+    <p id="ErrorMessage">
+
+    </p>
 </form>
 
 

@@ -420,17 +420,19 @@ figcaption {
     margin-left: auto;
     width: 700px;
     height: 500px;
+    /*
     border: 1px solid #ab9353;
+    */
     text-align: center;
 }
 
-#AccountCreationForm label {
+#AccountCreationForm label, #ErrorMessage {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
     color: #ab9353;
 }
 
-.FormElementsValid, .Selection {
+.FormElementsValid, .Selection, .FormElementsInvalid{
     margin-top: 2%;
     margin-right: 0.5%;
     padding-right: 2%;
@@ -439,6 +441,12 @@ figcaption {
     font-size: 17px;
     color: black;
     height: 5%;
+}
+
+
+input:invalid {
+    border-color: #900;
+    background-color: #FDD;
 }
 
 .Selection {
@@ -497,4 +505,14 @@ figcaption {
     cursor:pointer;
     background-color: #f4e4d4;
     color: #ab9353;
+}
+
+#ErrorMessage {
+    margin-left: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
 }
