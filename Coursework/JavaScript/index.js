@@ -5,17 +5,23 @@ let images = document.getElementsByClassName('AsideImages');
 let modalImg = document.getElementById("ModalImage");
 let captionText = document.getElementById("ModalCaption");
 let backgroundColours = ['#000000', '#673ab7', '#9f241b','#344a69'];
-let fontSize = ["170%", "200%", "230%", "120%"];
+let titleFontSizeList = ["363%","463%","563%", "663%", "763%"];
+let subtitleFontSizeList = ["106%","126%","156%", "176%", "196%"];
 let fontPicker = 0;
 let colourPicker = 0;
 let formElements = document.getElementsByClassName("FormElementsValid");
 let validFlag = true;
 
 
+
 window.onload = function LoadStuff() {
     document.getElementById("header").style.backgroundColor = localStorage.getItem('BGColour');
     document.getElementById("body").style.backgroundColor = localStorage.getItem('BGColour');
-    document.getElementById("HeaderSubTitle").style.fontSize = localStorage.getItem('FontSize');
+    document.getElementById("HeaderTitle").style.color = localStorage.getItem('TextColour');
+    document.getElementById("HeaderSubTitle").style.color = localStorage.getItem('TextColour');
+    document.getElementById("HeaderTitle").style.fontSize = localStorage.getItem('HeaderTitleFontSize');
+    document.getElementById("HeaderSubTitle").style.fontSize = localStorage.getItem('HeaderSubTitleFontSize');
+
 }
 
 /*for (let i = 0; i < images.length; i++) {
@@ -129,7 +135,7 @@ function FormSubmitButton() {
 }*/
 
 
-function ChangeBackground() {
+/*function ChangeBackground() {
     document.getElementById("header").style.backgroundColor = backgroundColours[colourPicker];
     document.getElementById("body").style.backgroundColor = backgroundColours[colourPicker];
     localStorage.setItem("BGColour",backgroundColours[colourPicker]);
@@ -137,8 +143,9 @@ function ChangeBackground() {
     if (colourPicker === backgroundColours.length) {
         colourPicker = 0;
     }
-}
+}*/
 
+/*
 function IncreaseSize() {
     document.getElementById("HeaderSubTitle").style.fontSize = fontSize[fontPicker];
     localStorage.setItem('FontSize', fontSize[fontPicker]);
@@ -147,6 +154,7 @@ function IncreaseSize() {
         fontPicker = 0;
     }
 }
+*/
 
 function Reset() {
     colourPicker = 0;
@@ -156,6 +164,18 @@ function Reset() {
     localStorage.setItem("BGColour", '#344a69');
     document.getElementById("HeaderSubTitle").style.fontSize = "120%";
     localStorage.setItem("FontSize", "120%");
+    document.getElementById("HeaderTitle").style.color = "#ab9353";
+    document.getElementById("HeaderSubTitle").style.color = "#ab9353";
+    document.getElementById("BackgroundColour").value = "#344a69";
+    document.getElementById("TextColour").value = "#ab9353";
+    localStorage.setItem("TextColour", "#ab9353");
+    document.getElementById("HeaderTitle").style.fontSize = "563%";
+    localStorage.setItem("HeaderTitleFontSize", "563%");
+    document.getElementById("TitleFontSize").value = 2;
+    document.getElementById("HeaderSubTitle").style.fontSize = "156%";
+    localStorage.setItem("HeaderSubTitleFontSize", "156%");
+    document.getElementById("SubTitleFontSize").value = 2;
+
 }
 
 let allImages = document.getElementsByClassName('enlargeImage');
@@ -206,5 +226,24 @@ function grow(e) {
             document.getElementById("ModalCaption").innerHTML = image.alt;
         },1500);
     }, 16.667);
+
+}
+
+
+function SettingsSubmit() {
+    let primaryColour = document.getElementById("BackgroundColour");
+        document.getElementById("header").style.backgroundColor = primaryColour.value;
+        document.getElementById("body").style.backgroundColor = primaryColour.value;
+        localStorage.setItem("BGColour",primaryColour.value);
+    let textColour = document.getElementById("TextColour");
+        document.getElementById("HeaderTitle").style.color = textColour.value;
+        document.getElementById("HeaderSubTitle").style.color = textColour.value;
+        localStorage.setItem("TextColour",textColour.value);
+    let titleFontSize = document.getElementById("TitleFontSize");
+        document.getElementById("HeaderTitle").style.fontSize = titleFontSizeList[titleFontSize.value];
+        localStorage.setItem("HeaderTitleFontSize", titleFontSizeList[titleFontSize.value]);
+    let subtitleFontSize = document.getElementById("SubTitleFontSize");
+    document.getElementById("HeaderSubTitle").style.fontSize = subtitleFontSizeList[subtitleFontSize.value];
+    localStorage.setItem("HeaderSubTitleFontSize", subtitleFontSizeList[subtitleFontSize.value]);
 
 }

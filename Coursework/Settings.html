@@ -14,13 +14,6 @@
 </head>
 
 <header id="header">
-    <nav>
-        <ul class="StyleButtons">
-            <li><button id="Reset" onclick="Reset()">Reset</button></li>
-            <li><button id="ChangeBackground" onclick="ChangeBackground()">Background</button></li>
-            <li><button id="FontSize" onclick="IncreaseSize()">Font</button></li>
-        </ul>
-    </nav>
 
     <h1 id = "HeaderTitle"><a href="Homepage.html">Framework</a></h1>
     <h2 id="HeaderSubTitle">NOTTINGHAM</h2>
@@ -29,16 +22,43 @@
         <ul class="MainNav">
             <li id="NavBar1"><a href="Gallery.html">Gallery</a></li>
             <li id="NavBar2"><a href="Restorations.html">Restorations</a></li>
-            <li id="NavBar3Push"><a href="Artists.html">Artists</a></li>
+            <li id="NavBar3Push"><a href="Settings.html">Settings</a></li>
             <li id="NavBar4"><a href="Account.html">Account</a></li>
         </ul>
     </nav>
 </header>
-
 <body id="body">
 <hr id="HorizontalLine3">
 <hr id="HorizontalLine4">
 <br>
+
+<section id="SettingsFlexContainer">
+<!--        <button id="FontSize" onclick="IncreaseSize()">Font</button>
+        <button id="Reset" onclick="Reset()">Reset</button>
+    <button id="ChangeBackground" onclick="ChangeBackground()">Background</button>-->
+
+
+    <label for="BackgroundColour" id="PrimaryColourLabel">Background Colour</label>
+    <input type="color" id="BackgroundColour" value="#344a69">
+
+    <label for="TextColour" id="TextColourLabel">Text Colour</label>
+    <input type="color" id="TextColour" value="#ab9353">
+
+    <label for="TitleFontSize" id="TitleFontSizeLabel">Title Font Size</label>
+    <input type="range" id="TitleFontSize" min="0" max="4" value="2">
+
+    <label for="SubTitleFontSize" id="SubTitleFontSizeLabel">Subtitle Font Size</label>
+    <input type="range" id="SubTitleFontSize" min="0" max="4" value="2">
+
+    <button id="Reset" onclick="Reset()">Reset</button>
+    <button id="SettingsSubmitButton" onclick="SettingsSubmit()">
+        Submit
+    </button>
+
+
+
+</section>
+
 
 
 </body>

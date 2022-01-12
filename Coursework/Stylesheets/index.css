@@ -21,7 +21,6 @@
     font-size: 90px;
     margin-left: auto;
     margin-right: auto;
-    padding-left:225px;
 }
 
 #HeaderSubTitle { /*Text styling for sub title*/
@@ -31,28 +30,6 @@
     'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 25px;
-}
-
-.StyleButtons { /*Styling buttons for changing font size and background colour*/
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
-}
-
-#ChangeBackground, #Reset, #FontSize {
-    display: inline-block;
-    float: right;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 20px;
-    color: black;
-    background-color: #ab9353;
-    border: 1px solid black;
-}
-
-#ChangeBackground:hover, #Reset:hover, #FontSize:hover {
-    cursor: pointer;
-    background-color: #f4e4d4;
-    color: #ab9353;
 }
 
 .MainNav {
@@ -180,7 +157,7 @@ aside img {
     margin-left: 2%;
 }
 
-.AsideImages:hover {
+.enlargeImage:hover {
     cursor: pointer;
 }
 
@@ -400,6 +377,65 @@ figcaption {
     font-size: 20px;
     color: #ab9353;
 }
+/*------------------------Settings------------------------*/
+.StyleButtons { /*Styling buttons for changing font size and background colour*/
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#SettingsFlexContainer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 20%;
+}
+
+#Reset, #SettingsSubmitButton, #TitleFontSize, #SubTitleFontSize {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: #ab9353;
+    border: 1px solid black;
+    column-gap: 2%;
+    height: 30px;
+    margin-bottom: 2%;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#Reset:hover, #SettingsSubmitButton:hover {
+    cursor: pointer;
+    background-color: #f4e4d4;
+    color: #ab9353;
+}
+
+#PrimaryColourLabel, #TextColourLabel, #TitleFontSizeLabel, #SubTitleFontSizeLabel {
+    display: block;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    color: #ab9353;
+    margin-bottom: 1%;
+    margin-top: 5%;
+
+}
+
+#BackgroundColour, #TextColour {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    border: 1px solid black;
+}
+
+
 /*------------------------Account------------------------*/
 
 #AccountCreationForm {
