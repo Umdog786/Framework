@@ -1,5 +1,7 @@
 let modal = document.getElementById('AsideModal');
+/*
 let images = document.getElementsByClassName('AsideImages');
+*/
 let modalImg = document.getElementById("ModalImage");
 let captionText = document.getElementById("ModalCaption");
 let backgroundColours = ['#000000', '#673ab7', '#9f241b','#344a69'];
@@ -16,7 +18,7 @@ window.onload = function LoadStuff() {
     document.getElementById("HeaderSubTitle").style.fontSize = localStorage.getItem('FontSize');
 }
 
-for (let i = 0; i < images.length; i++) {
+/*for (let i = 0; i < images.length; i++) {
     let img = images[i];
     img.onclick = function() {
         console.log(3);
@@ -24,12 +26,15 @@ for (let i = 0; i < images.length; i++) {
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     }
-}
+}*/
 
 let span = document.getElementsByClassName("ModalClose")[0];
 span.onclick = function()  {
+    document.getElementById("ModalCaption").innerHTML = "";
     modal.style.display = "none";
+
 }
+
 
 let buttons = document.getElementsByClassName("AddToCartButton");
 for (let j = 0; j < buttons.length; j++) {
@@ -111,21 +116,18 @@ function FormSubmitButton() {
 
 }
 
-/*
-function generateErrors(ErrorElementId) {
+/*function generateErrors(ErrorElementId) {
     let currentError = document.getElementById(ErrorElementId);
     let errorMessage = document.getElementById("ErrorMessage");
     if (currentError.validity.valueMissing) {
         let error = document.createTextNode(
-            `${currentError.id} is empty
-            `);
+            `${currentError.id} is empty`);
 
         errorMessage.appendChild(error);
     }
 
-}
+}*/
 
-*/
 
 function ChangeBackground() {
     document.getElementById("header").style.backgroundColor = backgroundColours[colourPicker];
@@ -154,4 +156,55 @@ function Reset() {
     localStorage.setItem("BGColour", '#344a69');
     document.getElementById("HeaderSubTitle").style.fontSize = "120%";
     localStorage.setItem("FontSize", "120%");
+}
+
+let allImages = document.getElementsByClassName('enlargeImage');
+/*
+allImages.forEach(function(growImage) {
+    growImage.addEventListener('click', grow);});
+*/
+
+for (let x = 0; x < allImages.length; x++) {
+    let currentImage = allImages[x];
+    currentImage.onclick = grow;
+
+
+}
+
+function grow(e) {
+    document.getElementById("ModalCaption").innerHTML = "";
+    let image = e.target;
+    let interval;
+    let originalHeight = image.height;
+    let originalWidth = image.width;
+    let height = image.height;
+    let width = image.width;
+    modal.style.display = "block";
+    modalImg.id = "ModalImage";
+    modalImg.src = image.src;
+    let incrementHeight = ((image.naturalHeight - height) / 60);
+    let incrementWidth = ((image.naturalWidth - width) / 60);
+
+    interval = setInterval(function() {
+/*        height += ((image.naturalHeight - image.naturalWidth) / 60);
+        width += ((image.naturalHeight - image.naturalWidth) / 60);*/
+
+        height += incrementHeight;
+        width += incrementWidth;
+        image.width = originalWidth;
+        image.height = originalHeight;
+
+        if(width >= modalImg.naturalWidth) {
+            width = modalImg.naturalWidth;
+            height = modalImg.naturalHeight;
+            clearInterval(interval);
+        }
+
+        modalImg.style.height = height + 'px';
+        modalImg.style.width = width + 'px';
+        setTimeout(function () {
+            document.getElementById("ModalCaption").innerHTML = image.alt;
+        },1500);
+    }, 16.667);
+
 }

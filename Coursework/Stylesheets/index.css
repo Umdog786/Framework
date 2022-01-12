@@ -201,8 +201,6 @@ aside img {
 .ModalImage {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
 }
 
 #ModalCaption {
@@ -215,16 +213,6 @@ aside img {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
-}
-
-.ModalImage, #ModalCaption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
 }
 
 .ModalClose {
@@ -274,8 +262,8 @@ aside img {
 }
 
 #GalleryFlexElementImg3 {
-    width: 176px;
-    height: 224px;
+    width: 328px;
+    height: 219px;
 }
 
 #GalleryFlexElementImg4 {
@@ -294,8 +282,8 @@ aside img {
 }
 
 #GalleryFlexElementImg7 {
-    width: 295px;
-    height: 171px;
+    width: 368px;
+    height: 184px;
 }
 
 #GalleryFlexElementImg8 {
