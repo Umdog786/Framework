@@ -10,9 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap"
           rel="stylesheet">
+    <script src = "JavaScript/index.js" defer></script>
     <title>Account</title>
 </head>
 
+
+<body id="body">
 <header id="header">
 
     <h1 id = "HeaderTitle"><a href="Homepage.html">Framework</a></h1>
@@ -27,7 +30,6 @@
         </ul>
     </nav>
 </header>
-<body id="body">
 <hr id="HorizontalLine3">
 <hr id="HorizontalLine4">
 <br>
@@ -36,7 +38,8 @@
     <label for="Prefix">
         Full Name
     </label>
-    <select id="Prefix" name="Prefix" class="Selection" required>
+    <select id="Prefix" name="Prefix" class="Selection" required >
+        <option value="" disabled selected hidden>Prefix</option>
         <option value="Mr">Mr</option>
         <option value="Mrs">Mrs</option>
         <option value="Miss">Miss</option>
@@ -75,6 +78,7 @@
         Phone Number
     </label>
     <select id="CountryCodes" name="CountryCodes" class="Selection" required>
+        <option value="" disabled selected hidden>(+XX)</option>
         <option value="NA">(+1)</option>
         <option value="EG">(+20)</option>
         <option value="FR">(+33)</option>
@@ -139,5 +143,4 @@
 
 </body>
 
-<script src = "JavaScript/index.js" defer></script>
 </html>
