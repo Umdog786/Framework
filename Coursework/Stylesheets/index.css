@@ -34,9 +34,12 @@
 
 .MainNav {
     display: flex;
+    flex-direction: row;
     padding-bottom: 2%;
     padding-left: 0;
-    margin-top: 0;
+    justify-content: space-between;
+    margin: 2%;
+
 }
 
 .MainNav li {
@@ -57,7 +60,7 @@ h1 a, a:hover, a:link, a:visited, a:active {
     color: inherit;
 }
 
-header #NavBar1 , #NavBar2{
+/*header #NavBar1 , #NavBar2{
     margin-left: 6%;
 }
 
@@ -67,7 +70,7 @@ header #NavBar3Push {
 
 header #NavBar4, #NavBar3Push {
     margin-right: 6%;
-}
+}*/
 
 body {
     margin: 0;
@@ -298,7 +301,7 @@ figcaption {
 
 .AddToCartButton, .AddToCartButtonVisited, .BeforeAfterButtons {
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     line-height: 2;
@@ -458,7 +461,7 @@ figcaption {
     margin-right: auto;
     margin-left: auto;
     width: 700px;
-    height: 500px;
+    height: 60%;
     /*
     border: 1px solid #ab9353;
     */
@@ -551,7 +554,27 @@ input:invalid {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
+    .MainNav {
+        flex-direction: column;
     }
+    #NavBar1 {
+        margin-left: 0;
+    }
+    body #HorizontalLine3 {
+        width: 100%;
+    }
+    body #HorizontalLine4 {
+        display: none;
+    }
+    main {
+        display: block;
+        float: none;
+        width: 90%;
+    }
+    aside {
+        display: block;
+        float: none;
+        width: 90%;
+    }
+    #W
 }
