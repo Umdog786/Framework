@@ -122,39 +122,6 @@ function FormSubmitButton() {
 
 }
 
-/*function generateErrors(ErrorElementId) {
-    let currentError = document.getElementById(ErrorElementId);
-    let errorMessage = document.getElementById("ErrorMessage");
-    if (currentError.validity.valueMissing) {
-        let error = document.createTextNode(
-            `${currentError.id} is empty`);
-
-        errorMessage.appendChild(error);
-    }
-
-}*/
-
-
-/*function ChangeBackground() {
-    document.getElementById("header").style.backgroundColor = backgroundColours[colourPicker];
-    document.getElementById("body").style.backgroundColor = backgroundColours[colourPicker];
-    localStorage.setItem("BGColour",backgroundColours[colourPicker]);
-    colourPicker += 1;
-    if (colourPicker === backgroundColours.length) {
-        colourPicker = 0;
-    }
-}*/
-
-/*
-function IncreaseSize() {
-    document.getElementById("HeaderSubTitle").style.fontSize = fontSize[fontPicker];
-    localStorage.setItem('FontSize', fontSize[fontPicker]);
-    fontPicker += 1;
-    if (fontPicker === fontSize.length) {
-        fontPicker = 0;
-    }
-}
-*/
 
 function Reset() {
     colourPicker = 0;

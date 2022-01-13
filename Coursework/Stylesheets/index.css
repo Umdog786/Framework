@@ -576,5 +576,9 @@ input:invalid {
         float: none;
         width: 90%;
     }
-    #W
+    #WT_IMAGE_1, #WT_IMAGE_2, #WT_IMAGE_3{
+        width: 100%;
+        margin-left: 5%;
+    }
+
 }
