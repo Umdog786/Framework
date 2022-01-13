@@ -291,6 +291,19 @@ aside img {
     height: 222px;
 }
 
+#GalleryWalk {
+    width: 480px;
+    height: 270px;
+    margin-top: 2%;
+}
+
+.GalleryVideo {
+    border: 1px solid #ab9353;
+    background-color: #616161;
+    display: block;
+    padding: 2%;
+}
+
 figcaption {
     line-height: 2;
     text-align: center;
@@ -336,7 +349,7 @@ figcaption {
 
 .RestorationFlexElements {
     width: 26%;
-    height: 700px;
+    height: 750px;
     display: block;
     margin: 10px;
     font-size: 30px;
@@ -553,7 +566,15 @@ input:invalid {
     margin-left: 25%;
 }
 
-@media only screen and (max-width: 600px) {
+footer{
+    margin-top: 70vh;
+    font-size: 20px;
+    text-align: center;
+    color: #d7cec7;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
     .MainNav {
         flex-direction: column;
     }
@@ -576,9 +597,22 @@ input:invalid {
         float: none;
         width: 90%;
     }
+    .RestorationsFlexContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .RestorationFlexElements {
+        width: 90%;
+    }
+
     #WT_IMAGE_1, #WT_IMAGE_2, #WT_IMAGE_3{
         width: 100%;
         margin-left: 5%;
     }
+    #AccountCreationForm {
+        width: 100%;
+    }
+
 
 }
