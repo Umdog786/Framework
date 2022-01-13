@@ -325,13 +325,15 @@ figcaption {
 
 .RestorationsFlexContainer {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px;
 }
 
 .RestorationFlexElements {
     width: 26%;
+    height: 700px;
     display: block;
     margin: 10px;
     font-size: 30px;
@@ -346,12 +348,7 @@ figcaption {
     margin-right: auto;
 }
 
-#OilPainting {
-    width: 290px;
-    height: 197px;
-}
-
-#OilPaintingText {
+#OilPaintingText, #ReframingText, #FireDamageText {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
     line-height: 1.4;
@@ -361,14 +358,28 @@ figcaption {
     margin-left: 2%;
     }
 
-#Reframing {
+#OilPainting {
+    /*width: 290px;*/
+    /*height: 197px;*/
+    width: 100%;
+    height: auto;
+    margin-bottom: 13%;
+
+}
+
+#Reframing {/*
     width: 256px;
-    height: 201px;
+    height: 201px;*/
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
 }
 
 #FireDamage {
-    width: 270px;
-    height: 208px;
+/*    width: 270px;
+    height: 208px;*/
+    width: 100%;
+    height: auto;
 }
 
 .RestorationsFlexContainer h3 {
@@ -408,6 +419,10 @@ figcaption {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+#Reset, #SettingsSubmitButton {
+    width: 30%;
 }
 
 #Reset:hover, #SettingsSubmitButton:hover {
