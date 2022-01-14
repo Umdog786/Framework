@@ -38,8 +38,8 @@
     <label for="Prefix">
         Full Name
     </label>
-    <select id="Prefix" name="Prefix" class="Selection" required >
-        <option value="" disabled selected hidden>Prefix</option>
+    <select id="Prefix" name="Prefix" class="Selection" required > <!--Select prefix from dropdown list-->
+        <option value="" disabled selected hidden>Prefix</option> <!--Placeholder value for prefix selection-->
         <option value="Mr">Mr</option>
         <option value="Mrs">Mrs</option>
         <option value="Miss">Miss</option>
@@ -47,7 +47,7 @@
         <option value="Lady">Lady</option>
         <option value="Dr">Dr</option>
     </select>
-    <label for="FirstName"></label>
+    <label for="FirstName"></label> <!--Input first name that must match RegEx statement-->
     <input type="text"
            id="FirstName"
            name="FirstName"
@@ -55,7 +55,7 @@
            placeholder="First Name"
            required
            pattern="^[a-zA-Z]+$">
-    <label for="Surname"></label>
+    <label for="Surname"></label> <!--Input surname that must match RegEx statement-->
     <input type="text"
            id="Surname"
            name="Surname"
@@ -64,7 +64,7 @@
            required
            pattern="^[a-zA-Z]+$">
     <br>
-    <label for="EmailAddress">Email Address</label>
+    <label for="EmailAddress">Email Address</label> <!--Input email address that must match RegEx statement-->
     <input type="email"
            id="EmailAddress"
            name="EmailAddress"
@@ -74,7 +74,7 @@
            title="Email Address"
            required>
     <br>
-    <label for="CountryCodes">
+    <label for="CountryCodes"> <!--Select country code from dropdown list-->
         Phone Number
     </label>
     <select id="CountryCodes" name="CountryCodes" class="Selection" required>
@@ -96,7 +96,7 @@
         <option value="VN">(+84)</option>
         <option value="TR">(+90)</option>
     </select>
-    <label for="PhoneNumber"></label>
+    <label for="PhoneNumber"></label> <!--Input phone number that must match RegEx statement-->
     <input type="text"
            id="PhoneNumber"
            name="PhoneNumber"
@@ -106,7 +106,7 @@
            maxlength="11"
            pattern="^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$">
     <br>
-    <label for="Postcode">
+    <label for="Postcode"> <!--Input Postcode-->
         Postcode
     </label>
     <input type="text"
@@ -117,7 +117,7 @@
            required
            >
     <br>
-    <label for="Address">
+    <label for="Address"> <!--Input address-->
         Address
     </label>
     <input type="text"
@@ -128,8 +128,8 @@
            required>
     <button id="SubmitButton" type="button" onclick="FormSubmitButton()">
         Create Account
-    </button>
-    <p id="ErrorMessage">
+    </button> <!--Submits form if valid data has been entered-->
+    <p id="ErrorMessage"> <!--For displaying either a submission error or submission success-->
 
     </p>
 </form>

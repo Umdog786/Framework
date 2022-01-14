@@ -2,38 +2,38 @@
 
 /*------------------------Header------------------------*/
 #header { /*Styling for header*/
-    background-color: #344a69;
-    margin: 0;
-    text-align: center;
+    background-color: #344a69; /*Sets colour to Navy Blue*/
+    margin: 0; /*Sets all margins of element to 0*/ 
+    text-align: center; /*Centers text relative to parent element*/
 }
 
 #HeaderTitle, #HeaderSubTitle { /*Styling for main and sub titles*/
-    margin: 0;
-    color: #ab9353;
-    text-align: center;
+    margin: 0; /*Sets all margins of element to 0*/
+    color: #ab9353; /*Sets colour to Gold*/
+    text-align: center; /*Centers text relative to parent element*/
 }
 
 #HeaderTitle { /*Text styling for main title*/
-    text-align: center;
-    display: inline-block;
-    font-family: 'MonteCarlo', cursive;
+    text-align: center; /*Centers text relative to parent element*/
+    display: inline-block; /*Causes element to be displayed in line with corresponding other elements*/
+    font-family: 'MonteCarlo', cursive; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-weight: 500;
-    font-size: 90px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 90px; /*Sets default title font size*/
+    margin-left: auto; /*Force centre aligns text within parent element*/ 
+    margin-right: auto; /*Force centre aligns text within parent element*/ 
 }
 
 #HeaderSubTitle { /*Text styling for sub title*/
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+    margin-left: auto; /*Force centre aligns text within parent element*/
+    margin-right: auto; /*Force centre aligns text within parent element*/
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 25px;
 }
 
 .MainNav {
-    display: flex;
+    display: flex; /*Sets the flex display mode*/
     flex-direction: row;
     padding-bottom: 2%;
     padding-left: 0;
@@ -44,7 +44,7 @@
 
 .MainNav li {
     list-style-type: none;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 21px;
     background-color: #f4e4d4;
     padding: 0.5% 0.5% 0.5% 0.5%;
@@ -52,7 +52,7 @@
 }
 
 .MainNav a:hover {
-    color: #ab9353;
+    color: #ab9353; /*Sets colour to Gold*/
 }
 
 h1 a, a:hover, a:link, a:visited, a:active {
@@ -60,40 +60,28 @@ h1 a, a:hover, a:link, a:visited, a:active {
     color: inherit;
 }
 
-/*header #NavBar1 , #NavBar2{
-    margin-left: 6%;
-}
-
-header #NavBar3Push {
-    margin-left: auto;
-}
-
-header #NavBar4, #NavBar3Push {
-    margin-right: 6%;
-}*/
-
 body {
-    margin: 0;
-    background-color: #344a69;
+    margin: 0; /*Sets all margins of element to 0*/
+    background-color: #344a69; /*Sets colour to Navy Blue*/
 }
 
 body #HorizontalLine3 {
-    display: inline-block;
+    display: inline-block; /*Causes element to be displayed in line with corresponding other elements*/
     float: left;
     width: 20%;
-    border-color: #ab9353;
+    border-color: #ab9353; /*Sets colour to Gold*/
 }
 
 body #HorizontalLine4 {
     float: right;
-    display: inline-block;
+    display: inline-block; /*Causes element to be displayed in line with corresponding other elements*/
     width: 20%;
-    border-color: #ab9353;
+    border-color: #ab9353; /*Sets colour to Gold*/
 }
 
 /*------------------------Homepage------------------------*/
 main {
-    display: inline-block;
+    display: inline-block; /*Causes element to be displayed in line with corresponding other elements*/
     float: left;
     width: 40%;
     margin-left: 3%;
@@ -102,23 +90,23 @@ main {
 
 #MainTitle {
     font-size: 40px;
-    color: #ab9353;
+    color: #ab9353; /*Sets colour to Gold*/
 }
 
 #MainTitle, #MainText {
-    text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
+    text-align: center; /*Centers text relative to parent element*/
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
 }
 
 #MainText {
     font-size: 20px;
-    text-align: center;
+    text-align: center; /*Centers text relative to parent element*/
     color: #d7cec7;
     padding-top: 20px;
 }
 
 aside {
-    display: inline-block;
+    display: inline-block; /*Causes element to be displayed in line with corresponding other elements*/
     float: right;
     width: 50%;
     /*
@@ -139,8 +127,8 @@ aside img {
     width: 35%;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /*Force centre aligns text within parent element*/
+    margin-right: auto; /*Force centre aligns text within parent element*/
 }
 
 #WT_IMAGE_2 {
@@ -167,7 +155,7 @@ aside img {
 .AsideModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1; /* Sit in front of webpage */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -184,12 +172,12 @@ aside img {
 }
 
 #ModalCaption {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-    text-align: center;
+    text-align: center; /*Centers text relative to parent element*/
     color: #ccc;
     padding: 10px 0;
     height: 150px;
@@ -202,7 +190,6 @@ aside img {
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 .ModalClose:hover,
@@ -213,16 +200,16 @@ aside img {
 }
 /*------------------------Gallery------------------------*/
 .GalleryFlexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: flex; /*Sets the flex display mode*/
+    flex-wrap: wrap; /*Causes the flex to wrap to next line if width limit is reached*/ 
+    align-items: flex-start; /*Causes the flex to start aligning elements at the start of the flex container*/
     align-content: center;
     justify-content: center;
     gap: 4%;
 }
 
 .GalleryFlexElements {
-    border: 1px solid #ab9353;
+    border: 1px solid #ab9353; /*Sets colour to Gold*/
     background-color: #616161;
     display: block;
     height: 450px;
@@ -231,83 +218,83 @@ aside img {
     margin-bottom: 1%;
 }
 
-#GalleryFlexElementImg1 {
+#GalleryFlexElementImg1 { /*Sets linearly scaled dimensions for the image*/
     width: 269px;
     height: 216px;
 }
 
-#GalleryFlexElementImg2 {
+#GalleryFlexElementImg2 { /*Sets linearly scaled dimensions for the image*/
     width: 313px;
     height: 216px;
 }
 
-#GalleryFlexElementImg3 {
+#GalleryFlexElementImg3 { /*Sets linearly scaled dimensions for the image*/
     width: 328px;
     height: 219px;
 }
 
-#GalleryFlexElementImg4 {
+#GalleryFlexElementImg4 { /*Sets linearly scaled dimensions for the image*/
     width: 298px;
     height: 196px;
 }
 
-#GalleryFlexElementImg5 {
+#GalleryFlexElementImg5 { /*Sets linearly scaled dimensions for the image*/
     width: 299px;
     height: 195px;
 }
 
-#GalleryFlexElementImg6 {
+#GalleryFlexElementImg6 { /*Sets linearly scaled dimensions for the image*/
     width: 291px;
     height: 201px;
 }
 
-#GalleryFlexElementImg7 {
+#GalleryFlexElementImg7 { /*Sets linearly scaled dimensions for the image*/
     width: 368px;
     height: 184px;
 }
 
-#GalleryFlexElementImg8 {
+#GalleryFlexElementImg8 { /*Sets linearly scaled dimensions for the image*/
     width: 212px;
     height: 259px;
 }
 
-#GalleryFlexElementImg9 {
+#GalleryFlexElementImg9 { /*Sets linearly scaled dimensions for the image*/
     width: 260px;
     height: 260px;
 }
 
-#GalleryFlexElementImg10 {
+#GalleryFlexElementImg10 { /*Sets linearly scaled dimensions for the image*/
     width: 260px;
     height: 260px;
 }
 
-#GalleryFlexElementImg11 {
+#GalleryFlexElementImg11 { /*Sets linearly scaled dimensions for the image*/
     width: 299px;
     height: 213px;
 }
 
-#GalleryFlexElementImg12 {
+#GalleryFlexElementImg12 { /*Sets linearly scaled dimensions for the image*/
     width: 295px;
     height: 222px;
 }
 
-#GalleryWalk {
+#GalleryWalk { /*Sets linearly scaled dimensions for the video*/
     width: 480px;
     height: 270px;
     margin-top: 2%;
 }
 
 .GalleryVideo {
-    border: 1px solid #ab9353;
-    background-color: #616161;
+    border: 1px solid #ab9353; /*Sets colour to Gold*/
+    background-color: #616161; /*Sets background colour of flex box elements to grey*/
     display: block;
     padding: 2%;
 }
 
 figcaption {
-    line-height: 2;
-    text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
+    line-height: 2; /*Text formatting for image captions*/
+    text-align: center; /*Centers text relative to parent element*/
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 20px;
     color: #f4e4d4;
 }
@@ -315,34 +302,34 @@ figcaption {
 .AddToCartButton, .AddToCartButtonVisited, .BeforeAfterButtons {
     display: block;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /*Force centre aligns text within parent element*/
+    margin-right: auto; /*Force centre aligns text within parent element*/
     line-height: 2;
-    text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
+    text-align: center; /*Centers text relative to parent element*/
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 20px;
     color: black;
-    background-color: #ab9353;
+    background-color: #ab9353; /*Sets colour to Gold*/
     border: 1px solid black;
 }
 
 .AddToCartButton:hover, .BeforeAfterButtons:hover {
     cursor:pointer;
     background-color: #f4e4d4;
-    color: #ab9353;
+    color: #ab9353; /*Sets colour to Gold*/
 }
 
 .AddToCartButtonVisited {
     cursor:pointer;
     background-color: #f4e4d4;
-    color: #ab9353;
+    color: #ab9353; /*Sets colour to Gold*/
 }
 /*------------------------Restorations------------------------*/
 
 .RestorationsFlexContainer {
-    display: flex;
+    display: flex; /*Sets the flex display mode*/
     align-items: stretch;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Causes the flex to wrap to next line if width limit is reached*/
     justify-content: space-around;
     gap: 10px;
 }
@@ -353,22 +340,22 @@ figcaption {
     display: block;
     margin: 10px;
     font-size: 30px;
-    border: 1px solid #ab9353;
+    border: 1px solid #ab9353; /*Sets colour to Gold*/
     background-color: #616161;
 
 }
 
 #OilPainting, #Reframing, #FireDamage {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /*Force centre aligns text within parent element*/
+    margin-right: auto; /*Force centre aligns text within parent element*/
 }
 
 #OilPaintingText, #ReframingText, #FireDamageText {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 16px;
     line-height: 1.4;
-    text-align: center;
+    text-align: center; /*Centers text relative to parent element*/
     color: #d7cec7;
     margin-right: 2%;
     margin-left: 2%;
@@ -399,23 +386,23 @@ figcaption {
 }
 
 .RestorationsFlexContainer h3 {
-    text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
+    text-align: center; /*Centers text relative to parent element*/
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 20px;
-    color: #ab9353;
+    color: #ab9353; /*Sets colour to Gold*/
 }
 /*------------------------Settings------------------------*/
 .StyleButtons { /*Styling buttons for changing font size and background colour*/
     list-style-type: none;
     text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /*Force centre aligns text within parent element*/
+    margin-right: auto; /*Force centre aligns text within parent element*/
 }
 
 #SettingsFlexContainer {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex; /*Sets the flex display mode*/
+    margin-left: auto; /*Force centre aligns text within parent element*/
+    margin-right: auto; /*Force centre aligns text within parent element*/
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -423,17 +410,17 @@ figcaption {
 }
 
 #Reset, #SettingsSubmitButton, #TitleFontSize, #SubTitleFontSize {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 20px;
     color: black;
-    background-color: #ab9353;
+    background-color: #ab9353; /*Sets colour to Gold*/
     border: 1px solid black;
     column-gap: 2%;
     height: 30px;
     margin-bottom: 2%;
     width: 25%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /*Force centre aligns text within parent element*/
+    margin-right: auto; /*Force centre aligns text within parent element*/
     display: block;
 }
 
@@ -444,15 +431,15 @@ figcaption {
 #Reset:hover, #SettingsSubmitButton:hover {
     cursor: pointer;
     background-color: #f4e4d4;
-    color: #ab9353;
+    color: #ab9353; /*Sets colour to Gold*/
 }
 
 #PrimaryColourLabel, #TextColourLabel, #TitleFontSizeLabel, #SubTitleFontSizeLabel {
     display: block;
-    text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
+    text-align: center; /*Centers text relative to parent element*/
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 20px;
-    color: #ab9353;
+    color: #ab9353; /*Sets colour to Gold*/
     margin-bottom: 1%;
     margin-top: 5%;
 
@@ -460,8 +447,8 @@ figcaption {
 
 #BackgroundColour, #TextColour {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /*Force centre aligns text within parent element*/
+    margin-right: auto; /*Force centre aligns text within parent element*/
     margin-bottom: 5%;
     border: 1px solid black;
 }
@@ -471,20 +458,17 @@ figcaption {
 
 #AccountCreationForm {
     margin-top: 3%;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: auto; /*Force centre aligns text within parent element*/
+    margin-left: auto; /*Force centre aligns text within parent element*/
     width: 700px;
     height: 60%;
-    /*
-    border: 1px solid #ab9353;
-    */
-    text-align: center;
+    text-align: center; /*Centers text relative to parent element*/
 }
 
 #AccountCreationForm label, #ErrorMessage {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 20px;
-    color: #ab9353;
+    color: #ab9353; /*Sets colour to Gold*/
 }
 
 .FormElementsValid, .Selection, .FormElementsInvalid{
@@ -492,14 +476,14 @@ figcaption {
     margin-right: 0.5%;
     padding-right: 2%;
     background-color:#f4e4d4 ;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 17px;
     color: black;
     height: 5%;
 }
 
 
-input:invalid {
+input:invalid { /*If a form input returns invalid then change styling of input box to red*/
     border-color: #900;
     background-color: #FDD;
 }
@@ -546,8 +530,8 @@ input:invalid {
 }
 
 #SubmitButton {
-    background-color: #ab9353;
-    font-family: 'Libre Franklin', sans-serif;
+    background-color: #ab9353; /*Sets colour to Gold*/
+    font-family: 'Libre Franklin', sans-serif; /*https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap*/
     font-size: 17px;
     color: black;
     margin-top: 1.5%;
@@ -559,7 +543,7 @@ input:invalid {
 #SubmitButton:hover {
     cursor:pointer;
     background-color: #f4e4d4;
-    color: #ab9353;
+    color: #ab9353; /*Sets colour to Gold*/
 }
 
 #ErrorMessage {
@@ -569,35 +553,35 @@ input:invalid {
 footer{
     margin-top: 70vh;
     font-size: 20px;
-    text-align: center;
+    text-align: center; /*Centers text relative to parent element*/
     color: #d7cec7;
     padding-top: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { /*For screen sizes less than 768 pixels*/
     .MainNav {
-        flex-direction: column;
+        flex-direction: column; /*Change the nav bar elements to be a stacked column*/
     }
     #NavBar1 {
         margin-left: 0;
     }
-    body #HorizontalLine3 {
+    body #HorizontalLine3 { /*Make the other gold accent line span the page*/
         width: 100%;
     }
-    body #HorizontalLine4 {
+    body #HorizontalLine4 { /*Remove one of the gold accent lines*/
         display: none;
     }
     main {
-        display: block;
+        display: block; /*Cause main text element to span the page*/
         float: none;
         width: 90%;
     }
     aside {
-        display: block;
+        display: block; /*Cause homepage image collage to span the page*/
         float: none;
         width: 90%;
     }
-    .RestorationsFlexContainer {
+    .RestorationsFlexContainer { /*Cause each element on restorations page to span the page*/
         flex-direction: column;
         justify-content: center;
         align-items: center;

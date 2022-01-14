@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=MonteCarlo&display=swap"
           rel="stylesheet">
     <script src = "JavaScript/index.js" defer></script>
-    <title>Artists</title>
+    <title>Settings</title>
 </head>
 
 
@@ -35,27 +35,23 @@
 <br>
 
 <section id="SettingsFlexContainer">
-<!--        <button id="FontSize" onclick="IncreaseSize()">Font</button>
-        <button id="Reset" onclick="Reset()">Reset</button>
-    <button id="ChangeBackground" onclick="ChangeBackground()">Background</button>-->
-
 
     <label for="BackgroundColour" id="PrimaryColourLabel">Background Colour</label>
-    <input type="color" id="BackgroundColour" value="#344a69">
+    <input type="color" id="BackgroundColour" value="#344a69"> <!--Colour picker for changing background colour-->
 
     <label for="TextColour" id="TextColourLabel">Text Colour</label>
-    <input type="color" id="TextColour" value="#ab9353">
+    <input type="color" id="TextColour" value="#ab9353"> <!--Colour picker for changing the text colour of the title and subtitle-->
 
     <label for="TitleFontSize" id="TitleFontSizeLabel">Title Font Size</label>
-    <input type="range" id="TitleFontSize" min="0" max="4" value="2">
+    <input type="range" id="TitleFontSize" min="0" max="4" value="2"> <!--Slider for changing the font size of the title-->
 
     <label for="SubTitleFontSize" id="SubTitleFontSizeLabel">Subtitle Font Size</label>
-    <input type="range" id="SubTitleFontSize" min="0" max="4" value="2">
+    <input type="range" id="SubTitleFontSize" min="0" max="4" value="2"> <!--Slider for changing the font size of the subtitle-->
 
-    <button id="Reset" onclick="Reset()">Reset</button>
+    <button id="Reset" onclick="Reset()">Reset</button> <!--Reset button for resetting style to default values-->
     <button id="SettingsSubmitButton" onclick="SettingsSubmit()">
         Submit
-    </button>
+    </button> <!--Apply styles selected through the above input methods-->
 
 
 
