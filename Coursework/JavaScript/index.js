@@ -123,11 +123,9 @@ function Reset() { /*Reset all default personalisation values if reset button is
 }
 
 let allImages = document.getElementsByClassName('enlargeImage');
-
 for (let x = 0; x < allImages.length; x++) {
     let currentImage = allImages[x];
     currentImage.onclick = grow; /*Whenever a grow image is clicked, call the grow function*/
-
 }
 
 function grow(e) {
