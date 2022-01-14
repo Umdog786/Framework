@@ -72,9 +72,6 @@ function FireDamageButton() {
 function FormSubmitButton() {
     for (let a = 0; a < formElements.length; a++) {
         if (!formElements[a].validity.valid) { /*If all form elements are not valid*/
-/*
-            generateErrors(formElements[a].id);
-*/
             validFlag = false; /*No data is stored in localStorage*/
         }
     }
